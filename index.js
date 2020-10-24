@@ -12,7 +12,7 @@ var equation = JSON.stringify('\\' + yourMath);
 const str = equation.replace(/\\/g, '\\\\');
 equation = JSON.parse(str);
 equation = equation.replace(/\\\\/g, '\\');
-console.log(equation)
+console.log(equation);
 mjAPI.typeset({
   math: equation,
   format: "TeX", // or "inline-TeX", "MathML"
